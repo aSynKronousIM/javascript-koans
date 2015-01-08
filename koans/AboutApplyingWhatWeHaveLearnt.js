@@ -40,6 +40,9 @@ describe("About Applying What We Have Learnt", function() {
       var productsICanEat = [];
 
       /* solve using filter() & all() / any() */
+      var noNuts = _.filter(products, function() {
+        return products.containsNuts === false;
+      })
 
       expect(productsICanEat.length).toBe(FILL_ME_IN);
   });
